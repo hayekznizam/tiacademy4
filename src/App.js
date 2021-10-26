@@ -4,11 +4,14 @@ import { Home } from './views/Home';
 import { Listar } from './views/Cliente/Listar/';
 import { ListarPedido } from './views/Pedido/Listar/';
 import { ListarServico } from './views/Servico/Listar';
+//importando o menu
+import{Menu} from './components/Menu';
 
 function App() {
   return (
     <div>
       <Router>
+        <Menu/>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/listar-cliente" component={Listar} />
